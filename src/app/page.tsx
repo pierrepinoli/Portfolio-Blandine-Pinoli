@@ -1,19 +1,41 @@
+"use client";
+
+import React, { useState } from "react";
 import About from "../components/About";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
+import Header from "../components/Header";
+import Home from "../components/Home";
+import Painting from "../components/Painting";
+import Sculpture from "../components/Sculpture";
 
+const App: React.FC = () => {
+  const [selectedSection, setSelectedSection] = useState("home");
 
-export default function Home() {
+  const renderSection = () => {
+    switch (selectedSection) {
+      case "home":
+        return <Home />;
+      case "about":
+        return <About />;
+      case "painting":
+        return <Painting />;
+      case "sculpture":
+        return <Sculpture />;
+      case "contact":
+        return <Contact />;
+      default:
+        return null;
+    }
+  };
+
   return (
-    <main>
-      <About />
-      
-
-    
-
-      <Contact />
+    <div className="app-container">
+      <Header onSelectSection={setSelectedSection} />
+      <div className="content-container">{renderSection()}</div>
       <Footer />
-    </main>
-    
+    </div>
   );
-}
+};
+
+export default App;

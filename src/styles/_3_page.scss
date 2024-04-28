@@ -1,0 +1,25 @@
+/* =================================== */
+/*  3.Page Main
+/* =================================== */
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%; /* Largeur du footer */
+  z-index: 1000; /* Assure que le footer soit au-dessus du reste du contenu */
+}
+
+.content-container {
+  padding-top: 50px;
+  margin-left: 200px; /* Décalage vers la droite pour laisser de la place au header */
+  flex-grow: 1;
+  overflow-y: auto; /* Ajoute un défilement uniquement aux sections */
+  -webkit-overflow-scrolling: touch; /* Améliore les performances de défilement sur les appareils tactiles */
+}

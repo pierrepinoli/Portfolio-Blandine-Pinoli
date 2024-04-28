@@ -1,0 +1,17 @@
+/* =================================== */
+/*  4.Header
+/* =================================== */
+
+header {
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px; /* Largeur du header */
+  height: 100vh; /* Hauteur du header */
+  overflow: hidden; /* Empêche le défilement dans le header */
+  z-index: 1000; /* Assure que le header soit au-dessus du reste du contenu */
+}

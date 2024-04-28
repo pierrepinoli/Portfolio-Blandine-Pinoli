@@ -11,37 +11,24 @@
 
       1. Reset
       2. Variables
-      2. Helpers Classes
-      3. Layouts
+      3. Page
       4. Header
-        4.1 Navigation
-        4.2 Secondary Nav
-        4.3 Page Header
-      5 Elements
-        5.1 Featured Box
-        5.2 Team
-        5.3 Accordion
-        5.4 Nav
-        5.5 Tabs
-        5.6 Hero Background
-        5.7 Slick Slider
-        5.8 Brands Grid
-        5.9 Portfolio
-        5.10 List Style
-      6 Footer
-        6.1 Social Icons
-        6.2 Back to Top
-      7 Extra
-      8 Addition
-
+      5. Home
+      6. About
+      7. Painting
+      8. Sculpture
+      9. Footer
 
 =======================================================*/
 
-// global.scss
+@use "tailwindcss/base";
+@use "tailwindcss/components";
+@use "tailwindcss/utilities";
 
-@use 'tailwindcss/base';
-@use 'tailwindcss/components';
-@use 'tailwindcss/utilities';
+@import "./1_reset";
+@import "./2_variables";
+@import "./3_page";
+@import "./4_header";
 
 $foreground-rgb: 0 0 0;
 $background-start-rgb: 214 219 220;
@@ -55,9 +42,8 @@ $background-end-rgb: 255 255 255;
 
 body {
   color: rgb($foreground-rgb);
-  background: linear-gradient(to bottom,
-      transparent,
-      rgb($background-end-rgb)) rgb($background-start-rgb);
+  background: linear-gradient(to bottom, transparent, rgb($background-end-rgb))
+    rgb($background-start-rgb);
 }
 
 @layer utilities {

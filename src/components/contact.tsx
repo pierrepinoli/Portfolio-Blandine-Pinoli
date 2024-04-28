@@ -1,25 +1,23 @@
 "use client";
 
+import emailjs from "emailjs-com";
 import React, { useRef, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
-import emailjs from 'emailjs-com';
 
-
-import 'react-toastify/dist/ReactToastify.css';
+import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
-
   const form = useRef();
   const [sendingMail, setSendingMail] = useState(false);
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-      // Vérifie si form.current est défini
+    // Vérifie si form.current est défini
     if (!form.current) {
-        console.error("form.current is not defined");
-        return;
-  }
+      console.error("form.current is not defined");
+      return;
+    }
     setSendingMail(true);
     emailjs
       .sendForm(
@@ -66,30 +64,13 @@ const Contact = () => {
     <section id="contact" className="section bg-primary">
       <div className="container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-          <div className="lg:text-left text-center animate__animated animate__fadeInUp">
-            <h2 className="text-3xl font-semibold mb-5">Entrons en contact</h2>
-            <p className="text-lg mb-5">
-              Je suis enthousiaste à l'idée d'explorer de nouveaux projets et de relever des défis de conception.  
-              Je suis ouvert à toute discussion et disponible pour des entretiens.
-              N'hésitez pas à partager autant d'informations que possible afin que nous puissions tirer le meilleur parti de notre première réunion. 
-              <br />
-              Le formulaire de contact est à votre disposition pour me joindre.
-            </p>
-            <h3 className="text-lg font-semibold">Mon adresse :</h3>
-            <address className="text-base">
-              1298 route du Mouriol, 07100, Boulieu-lès-Annonay.
-            </address>
-            <h3 className="text-lg font-semibold">Téléphone :</h3>
-            <p className="text-base">06 32 75 60 35</p>
-            <h3 className="text-lg font-semibold">Mon adresse mail :</h3>
-            <p className="text-base mb-0">
-              <a className="text-white" href="mailto:pinoli.pierre@live.fr">
-                pinoli.pierre@live.fr
-              </a>
-            </p>
-          </div>
-          <div className="lg:mt-5 lg:ml-auto lg:w-2/3 animate__animated animate__fadeInUp" data-wow-delay="0.3s">
-            <h2 className="text-3xl font-semibold mb-5 text-center lg:text-left">Contactez-moi :</h2>
+          <div
+            className="lg:mt-5 lg:ml-auto lg:w-2/3 animate__animated animate__fadeInUp"
+            data-wow-delay="0.3s"
+          >
+            <h2 className="text-3xl font-semibold mb-5 text-center lg:text-left">
+              Contactez-moi :
+            </h2>
             {/* Contact Form */}
             <form
               id="contact-form"

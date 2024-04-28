@@ -1,12 +1,12 @@
 "use client";
 // components/About.tsx
-const About = () => {
+const Painting = () => {
   return (
     <section id="about" className="section">
-      <h2>Bonjour, Je suis blandine Pinoli</h2>
-      <p>hello world</p>
+      <h2>Je suis blandine Pinoli</h2>
+      <p>PAINTING</p>
     </section>
   );
 };
 
-export default About;
+export default Painting;
