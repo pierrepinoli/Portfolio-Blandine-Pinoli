@@ -1,5 +1,6 @@
 "use client";
 
+import Oil from "@/components/Oil";
 import React, { useState } from "react";
 import About from "../components/About";
 import Contact from "../components/Contact";
@@ -18,6 +19,8 @@ const App: React.FC = () => {
         return <Home />;
       case "about":
         return <About />;
+      case "huile":
+        return <Oil />;
       case "painting":
         return <Painting />;
       case "sculpture":
@@ -32,7 +35,9 @@ const App: React.FC = () => {
   return (
     <div className="app-container">
       <Header onSelectSection={setSelectedSection} />
-      <div className="content-container">{renderSection()}</div>
+      <div className="content-container flex flex-col items-center">
+        {renderSection()}
+      </div>
       <Footer />
     </div>
   );

@@ -9,14 +9,14 @@ interface HeaderProps {
 
 const Header: React.FC = ({ onSelectSection }: HeaderProps) => {
   return (
-    <header id="header">
-      <nav className="nav-bar flex flex-col justify-between w-24 h-screen">
+    <header id="header" className="flex flex-col items-center justify-around">
+      <nav className="nav-bar flex flex-col justify-between w-24">
         <a
           href="#"
           onClick={() => onSelectSection("home")}
           className="ml-1/100"
         >
-          Home
+          LOGO
         </a>
         <a
           href="#"
@@ -38,6 +38,13 @@ const Header: React.FC = ({ onSelectSection }: HeaderProps) => {
           className="ml-1/100"
         >
           Painting
+        </a>
+        <a
+          href="#"
+          onClick={() => onSelectSection("huile")}
+          className="ml-1/100"
+        >
+          Huile
         </a>
         <a
           href="#"
