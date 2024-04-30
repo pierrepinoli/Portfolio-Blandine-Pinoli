@@ -5,11 +5,14 @@ import Portfolio from "../components/Portfolio";
 
 const Sculpture = () => {
   return (
-    <section id="sculpture" className="section">
-      <h2>Je suis blandine Pinoli</h2>
-      <p>SCULPTURE</p>
+    <>
+      <section id="sculpture">
+        <div>
+          <h2 className="text-5xl">MES SCULPTURES</h2>
+        </div>
+      </section>
       <Portfolio filters={filters} projects={sculptureData} />
-    </section>
+    </>
   );
 };
 

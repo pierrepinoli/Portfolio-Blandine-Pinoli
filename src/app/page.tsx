@@ -38,9 +38,11 @@ const App: React.FC = () => {
   return (
     <div className="app-container">
       <Header onSelectSection={setSelectedSection} />
-      <div className="content-container flex flex-col items-center">
-        {renderSection()}
-      </div>
+      <main>
+        <div className="content-container flex flex-col items-center">
+          {renderSection()}
+        </div>
+      </main>
       <Footer />
     </div>
   );

@@ -24,42 +24,44 @@ const Portfolio = ({ filters, projects }) => {
 
   return (
     <>
-      {/* Filter Menu */}
-      <ul className="portfolio-menu">
-        <li>
-          <button
-            className={filterKey === "*" ? "active" : ""}
-            onClick={() => handleFilterKeyChange("*")}
-          >
-            Tous
-          </button>
-        </li>
-        {Object.keys(filters).map((key, i) => (
-          <li key={i}>
+      <section className="portfolio-container">
+        {/* Filter Menu */}
+        <ul className="portfolio-menu">
+          <li>
             <button
-              className={filterKey === key ? "active" : ""}
-              onClick={() => handleFilterKeyChange(key)}
+              className={filterKey === "*" ? "active" : ""}
+              onClick={() => handleFilterKeyChange("*")}
             >
-              {filters[key]}
+              Tous
             </button>
           </li>
-        ))}
-      </ul>
+          {Object.keys(filters).map((key, i) => (
+            <li key={i}>
+              <button
+                className={filterKey === key ? "active" : ""}
+                onClick={() => handleFilterKeyChange(key)}
+              >
+                {filters[key]}
+              </button>
+            </li>
+          ))}
+        </ul>
 
-      {/* Project Grid */}
-      <div className="project-grid">
-        {filteredProjects.map((project, index) => (
-          <div className="project" key={index}>
-            <Image
-              src={project.imageOriginal}
-              alt={project.alt}
-              width={300}
-              height={300}
-            />
-            <h3>{project.title}</h3>
-          </div>
-        ))}
-      </div>
+        {/* Project Grid */}
+        <div className="project-grid grid grid-cols-4 gap-4">
+          {filteredProjects.map((project, index) => (
+            <div className="project-container" key={index}>
+              <Image
+                src={project.imageOriginal}
+                alt={project.alt}
+                width={300}
+                height={300}
+              />
+              <h3>{project.title}</h3>
+            </div>
+          ))}
+        </div>
+      </section>
     </>
   );
 };

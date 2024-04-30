@@ -5,11 +5,12 @@ import Portfolio from "../components/Portfolio";
 
 const Acrylic = () => {
   return (
-    <section id="acrylic" className="section">
-      <h2>Je suis blandine Pinoli</h2>
-      <p>ACRYLIQUE</p>
+    <>
+      <section id="acrylic">
+        <h2 className="text-5xl">MES PEINTURES À L'ACRYLIQUE</h2>
+      </section>
       <Portfolio filters={filters} projects={acrylicData} />
-    </section>
+    </>
   );
 };
 

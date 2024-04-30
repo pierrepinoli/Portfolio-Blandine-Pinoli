@@ -5,11 +5,14 @@ import Portfolio from "../components/Portfolio";
 
 const Watercolor = () => {
   return (
-    <section id="watercolor" className="section">
-      <h2>Je suis blandine Pinoli</h2>
-      <p>AQUARELLE</p>
+    <>
+      <section id="watercolor">
+        <div className="title-section-container">
+          <h2 className="text-5xl">MES AQUARELLES</h2>
+        </div>
+      </section>
       <Portfolio filters={filters} projects={watercolorData} />
-    </section>
+    </>
   );
 };
 
