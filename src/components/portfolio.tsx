@@ -26,7 +26,8 @@ const Portfolio = ({ filters, projects }) => {
     <>
       <section className="portfolio-container">
         {/* Filter Menu */}
-        <ul className="portfolio-menu">
+
+        <ul className="portfolio-filter-menu flex fw-semibold justify-center md:justify-center border-b-0 mb-5 animate__animated animate__fadeInUp">
           <li>
             <button
               className={filterKey === "*" ? "active" : ""}
