@@ -7,7 +7,7 @@ const Oil = () => {
   return (
     <section id="oil">
       <div className="title-section-container">
-        <h2>PEINTURE À L'HUILE</h2>
+        <h2 className="text-5xl">PEINTURE À L'HUILE</h2>
         <Portfolio />
       </div>
     </section>

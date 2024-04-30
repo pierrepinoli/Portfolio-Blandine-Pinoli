@@ -3,8 +3,8 @@
 const Home = () => {
   return (
     <section id="about" className="section">
-      <h2>Je suis blandine Pinoli</h2>
-      <p>HOME</p>
+      <h2 className="text-4xl">LOGO</h2>
+      <p>Bienvenue</p>
     </section>
   );
 };

@@ -9,8 +9,11 @@ interface HeaderProps {
 
 const Header: React.FC = ({ onSelectSection }: HeaderProps) => {
   return (
-    <header id="header" className="flex flex-col items-center justify-around">
-      <nav className="nav-bar flex flex-col justify-between w-24">
+    <header
+      id="header"
+      className="flex flex-col items-center pt-50 pb-50 fixed top-0 left-0 w-300px h-full overflow-hidden z-50"
+    >
+      <nav className="nav-bar flex flex-col justify-between pl-10 w-24">
         <a
           href="#"
           onClick={() => onSelectSection("home")}
@@ -21,42 +24,42 @@ const Header: React.FC = ({ onSelectSection }: HeaderProps) => {
         <a
           href="#"
           onClick={() => onSelectSection("home")}
-          className="ml-1/100"
+          className="ml-1/100 text-2xl"
         >
           Home
         </a>
         <a
           href="#"
           onClick={() => onSelectSection("about")}
-          className="ml-1/100"
+          className="ml-1/100 text-2xl"
         >
           About
         </a>
         <a
           href="#"
           onClick={() => onSelectSection("painting")}
-          className="ml-1/100"
+          className="ml-1/100 text-2xl"
         >
           Painting
         </a>
         <a
           href="#"
           onClick={() => onSelectSection("huile")}
-          className="ml-1/100"
+          className="ml-1/100 text-2xl"
         >
           Huile
         </a>
         <a
           href="#"
           onClick={() => onSelectSection("sculpture")}
-          className="ml-1/100"
+          className="ml-1/100 text-2xl"
         >
           Sculpture
         </a>
         <a
           href="#"
           onClick={() => onSelectSection("contact")}
-          className="ml-1/100"
+          className="ml-1/100 text-2xl"
         >
           Contact
         </a>
