@@ -1,5 +1,6 @@
 "use client";
 
+import Acrylic from "@/components/Acrylic";
 import Oil from "@/components/Oil";
 import React, { useState } from "react";
 import About from "../components/About";
@@ -7,8 +8,8 @@ import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Home from "../components/Home";
-import Painting from "../components/Painting";
 import Sculpture from "../components/Sculpture";
+import Watercolor from "../components/Watercolor";
 
 const App: React.FC = () => {
   const [selectedSection, setSelectedSection] = useState("home");
@@ -19,10 +20,12 @@ const App: React.FC = () => {
         return <Home />;
       case "about":
         return <About />;
-      case "huile":
+      case "oil":
         return <Oil />;
-      case "painting":
-        return <Painting />;
+      case "acrylic":
+        return <Acrylic />;
+      case "watercolor":
+        return <Watercolor />;
       case "sculpture":
         return <Sculpture />;
       case "contact":

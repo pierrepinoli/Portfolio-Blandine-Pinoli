@@ -16,7 +16,7 @@ const Header: React.FC = ({ onSelectSection }: HeaderProps) => {
       <nav className="nav-bar flex flex-col justify-between pl-10 w-24">
         <a
           href="#"
-          onClick={() => onSelectSection("home")}
+          onClick={() => onSelectSection("logo")}
           className="ml-1/100"
         >
           LOGO
@@ -26,28 +26,35 @@ const Header: React.FC = ({ onSelectSection }: HeaderProps) => {
           onClick={() => onSelectSection("home")}
           className="ml-1/100 text-2xl"
         >
-          Home
+          Accueil
         </a>
         <a
           href="#"
           onClick={() => onSelectSection("about")}
           className="ml-1/100 text-2xl"
         >
-          About
+          À Propos
         </a>
         <a
           href="#"
-          onClick={() => onSelectSection("painting")}
+          onClick={() => onSelectSection("watercolor")}
           className="ml-1/100 text-2xl"
         >
-          Painting
+          Aquarelle
         </a>
         <a
           href="#"
-          onClick={() => onSelectSection("huile")}
+          onClick={() => onSelectSection("acrylic")}
           className="ml-1/100 text-2xl"
         >
-          Huile
+          Acrylique
+        </a>
+        <a
+          href="#"
+          onClick={() => onSelectSection("oil")}
+          className="ml-1/100 text-2xl"
+        >
+          Peinture à l'huile
         </a>
         <a
           href="#"

@@ -1,27 +1,26 @@
 /* eslint-disable @next/next/no-img-element */
 
-import { filters, oilData } from "@/assets/data/oilData";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
-const Portfolio = () => {
+const Portfolio = ({ filters, projects }) => {
   const [filterKey, setFilterKey] = useState("*");
-  const [projects, setProjects] = useState(oilData);
+  const [filteredProjects, setFilteredProjects] = useState(projects);
 
-  const handleFilterKeyChange = (key: string) => {
+  const handleFilterKeyChange = (key) => {
     setFilterKey(key);
   };
 
   useEffect(() => {
     if (filterKey === "*") {
-      setProjects(oilData);
+      setFilteredProjects(projects);
     } else {
-      const filteredProjects = oilData.filter((project) =>
+      const filteredProjects = projects.filter((project) =>
         project.available ? filterKey === "available" : filterKey === "sold"
       );
-      setProjects(filteredProjects);
+      setFilteredProjects(filteredProjects);
     }
-  }, [filterKey]);
+  }, [filterKey, projects]);
 
   return (
     <>
@@ -35,7 +34,7 @@ const Portfolio = () => {
             Tous
           </button>
         </li>
-        {Object.keys(filters).map((key: string, i: number) => (
+        {Object.keys(filters).map((key, i) => (
           <li key={i}>
             <button
               className={filterKey === key ? "active" : ""}
@@ -49,7 +48,7 @@ const Portfolio = () => {
 
       {/* Project Grid */}
       <div className="project-grid">
-        {projects.map((project, index) => (
+        {filteredProjects.map((project, index) => (
           <div className="project" key={index}>
             <Image
               src={project.imageOriginal}

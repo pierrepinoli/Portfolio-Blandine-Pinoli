@@ -1,10 +1,14 @@
 "use client";
-// components/About.tsx
+
+import { filters, sculptureData } from "@/assets/data/sculptureData";
+import Portfolio from "../components/Portfolio";
+
 const Sculpture = () => {
   return (
-    <section id="about" className="section">
+    <section id="sculpture" className="section">
       <h2>Je suis blandine Pinoli</h2>
-      <p>SCULTUPRE</p>
+      <p>SCULPTURE</p>
+      <Portfolio filters={filters} projects={sculptureData} />
     </section>
   );
 };
