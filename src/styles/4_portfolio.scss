@@ -7,8 +7,12 @@
 }
 
 .nav-link:hover {
-  color: $primary-color;
+  color: $primary-color-hover;
 }
 .active {
   color: $primary-color;
+}
+
+.projetc-grid-container {
+  background-color: $secondary-color;
 }

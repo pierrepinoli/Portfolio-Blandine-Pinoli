@@ -39,6 +39,77 @@ const oilData = [
     alt: "peinture de télécabine",
     available: true,
   },
+  // ******************** //
+  {
+    title: "Panorama asiatique",
+    imageOriginal: asian_panorama,
+    ariaLabel: "",
+    alt: "peinture d'un panorama d'une côte asiatique",
+    available: true,
+  },
+  {
+    title: "Télécabines",
+    imageOriginal: cable_car,
+    ariaLabel: "",
+    alt: "peinture de télécabine",
+    available: true,
+  },
+  {
+    title: "Panorama asiatique",
+    imageOriginal: asian_panorama,
+    ariaLabel: "",
+    alt: "peinture d'un panorama d'une côte asiatique",
+    available: true,
+  },
+  {
+    title: "Télécabines",
+    imageOriginal: cable_car,
+    ariaLabel: "",
+    alt: "peinture de télécabine",
+    available: true,
+  },
+  {
+    title: "Panorama asiatique",
+    imageOriginal: asian_panorama,
+    ariaLabel: "",
+    alt: "peinture d'un panorama d'une côte asiatique",
+    available: true,
+  },
+  {
+    title: "Télécabines",
+    imageOriginal: cable_car,
+    ariaLabel: "",
+    alt: "peinture de télécabine",
+    available: true,
+  },
+  {
+    title: "Panorama asiatique",
+    imageOriginal: asian_panorama,
+    ariaLabel: "",
+    alt: "peinture d'un panorama d'une côte asiatique",
+    available: true,
+  },
+  {
+    title: "Télécabines",
+    imageOriginal: cable_car,
+    ariaLabel: "",
+    alt: "peinture de télécabine",
+    available: true,
+  },
+  {
+    title: "Panorama asiatique",
+    imageOriginal: asian_panorama,
+    ariaLabel: "",
+    alt: "peinture d'un panorama d'une côte asiatique",
+    available: true,
+  },
+  {
+    title: "Télécabines",
+    imageOriginal: cable_car,
+    ariaLabel: "",
+    alt: "peinture de télécabine",
+    available: true,
+  },
 ];
 
 export { filters, oilData };

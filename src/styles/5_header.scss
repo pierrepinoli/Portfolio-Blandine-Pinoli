@@ -11,3 +11,21 @@
 .current-section {
   text-decoration: underline;
 }
+
+.project-container {
+  width: 300px; /* ou toute autre largeur */
+  height: 200px; /* ou toute autre hauteur */
+  overflow: hidden; /* Pour cacher toute partie de l'image qui dépasse la div parente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.project-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

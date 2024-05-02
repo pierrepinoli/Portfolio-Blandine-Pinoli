@@ -24,7 +24,7 @@ const Portfolio = ({ filters, projects }) => {
 
   return (
     <>
-      <section className="portfolio-container flex flex-col justify-center gap-10">
+      <section className="portfolio-container flex flex-col justify-center">
         {/* Filter Menu */}
 
         <ul className="portfolio-filter-menu primary-color text-4xl flex gap-6 justify-center">
@@ -49,18 +49,23 @@ const Portfolio = ({ filters, projects }) => {
         </ul>
 
         {/* Project Grid */}
-        <div className="project-grid grid grid-cols-4 gap-4">
-          {filteredProjects.map((project, index) => (
-            <div className="project-container primary-color" key={index}>
-              <Image
-                src={project.imageOriginal}
-                alt={project.alt}
-                width={300}
-                height={300}
-              />
-              <h3>{project.title}</h3>
-            </div>
-          ))}
+        <div className="projetc-grid-container m-10 p-10">
+          <div className="project-grid grid grid-cols-3 gap-10 ">
+            {filteredProjects.map((project, index) => (
+              <div
+                className="project-container flex content-center primary-color "
+                key={index}
+              >
+                <Image
+                  src={project.imageOriginal}
+                  alt={project.alt}
+                  layout="fill"
+                  objectFit="cover"
+                  className="project-img"
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </section>
     </>
