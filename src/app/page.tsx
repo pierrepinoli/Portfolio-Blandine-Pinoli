@@ -39,7 +39,7 @@ const App: React.FC = () => {
     <div className="app-container">
       <Header onSelectSection={setSelectedSection} />
       <main>
-        <div className="content-container flex flex-col items-center">
+        <div className="content-container flex flex-col items-center gap-10 ">
           {renderSection()}
         </div>
       </main>

@@ -4,13 +4,26 @@
 
 //-------------------- Base Colors --------------------//
 
-$primary-color: #f5754e;
+$primary-color: #0f52ba;
 $primary-color-hover: darken($primary-color, 7%);
-$secondary-color: #939597;
+$secondary-color: #bfc1c2;
+$background-color: white;
 $body-bg: #dddddd;
 // changement de couleur de .text-muted pour l'accessibilité base : 6c757d
 // le changer aussi dans les couleurs /sass/colors/...
 $text-muted-color: #575757;
+
+.primary-color {
+  color: $primary-color;
+}
+
+.secondary-color {
+  color: $secondary-color;
+}
+
+.background-color {
+  background-color: $background-color;
+}
 
 //-------------------- Social Icons Colors --------------------//
 

@@ -8,7 +8,7 @@ const Watercolor = () => {
     <>
       <section id="watercolor">
         <div className="title-section-container">
-          <h2 className="text-5xl">MES AQUARELLES</h2>
+          <h2 className="text-5xl primary-color">MES AQUARELLES</h2>
         </div>
       </section>
       <Portfolio filters={filters} projects={watercolorData} />

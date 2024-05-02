@@ -12,8 +12,8 @@
       1. Reset
       2. Fonts
       3. Page
-      4. Header
-      5. Home
+      4. Portfolio
+      5. Header
       6. About
       7. Painting
       8. Sculpture
@@ -28,24 +28,10 @@
 @import "./1_reset";
 @import "./2_variables";
 @import "./3_page";
-@import "./4_header";
+@import "./4_portfolio";
+@import "./5_header";
 
 //
-$foreground-rgb: 0 0 0;
-$background-start-rgb: 214 219 220;
-$background-end-rgb: 255 255 255;
-
-@media (prefers-color-scheme: dark) {
-  $foreground-rgb: 255 255 255;
-  $background-start-rgb: 0 0 0;
-  $background-end-rgb: 0 0 0;
-}
-
-body {
-  color: rgb($foreground-rgb);
-  background: linear-gradient(to bottom, transparent, rgb($background-end-rgb))
-    rgb($background-start-rgb);
-}
 
 @layer utilities {
   .text-balance {

@@ -68,7 +68,7 @@ const Contact = () => {
             className="lg:mt-5 lg:ml-auto lg:w-2/3 animate__animated animate__fadeInUp"
             data-wow-delay="0.3s"
           >
-            <h2 className="text-5xl font-semibold mb-5 text-center lg:text-left">
+            <h2 className="text-5xl primary-color font-semibold mb-5 text-center lg:text-left">
               Contactez-moi :
             </h2>
             {/* Contact Form */}

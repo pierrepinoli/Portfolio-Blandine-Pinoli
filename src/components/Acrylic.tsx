@@ -7,7 +7,7 @@ const Acrylic = () => {
   return (
     <>
       <section id="acrylic">
-        <h2 className="text-5xl">MES PEINTURES À L'ACRYLIQUE</h2>
+        <h2 className="text-5xl primary-color">MES PEINTURES À L'ACRYLIQUE</h2>
       </section>
       <Portfolio filters={filters} projects={acrylicData} />
     </>

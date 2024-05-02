@@ -3,7 +3,7 @@
 const About = () => {
   return (
     <section id="about" className="section">
-      <h2 className="text-5xl">A PROPOS DE MOI</h2>
+      <h2 className="text-5xl primary-color">À PROPOS DE MOI</h2>
       <p>hello world</p>
     </section>
   );

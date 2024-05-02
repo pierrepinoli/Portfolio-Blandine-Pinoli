@@ -8,7 +8,7 @@ const Sculpture = () => {
     <>
       <section id="sculpture">
         <div>
-          <h2 className="text-5xl">MES SCULPTURES</h2>
+          <h2 className="text-5xl primary-color">MES SCULPTURES</h2>
         </div>
       </section>
       <Portfolio filters={filters} projects={sculptureData} />

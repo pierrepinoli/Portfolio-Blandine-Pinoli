@@ -8,7 +8,7 @@ const Oil = () => {
     <>
       <section id="oil">
         <div className="title-section-container">
-          <h2 className="text-5xl">MES PEINTURES À L'HUILE</h2>
+          <h2 className="text-5xl primary-color">MES PEINTURES À L'HUILE</h2>
         </div>
       </section>
       <Portfolio filters={filters} projects={oilData} />

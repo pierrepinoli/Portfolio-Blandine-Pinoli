@@ -24,13 +24,13 @@ const Portfolio = ({ filters, projects }) => {
 
   return (
     <>
-      <section className="portfolio-container">
+      <section className="portfolio-container flex flex-col justify-center gap-10">
         {/* Filter Menu */}
 
-        <ul className="portfolio-filter-menu flex fw-semibold justify-center md:justify-center border-b-0 mb-5 animate__animated animate__fadeInUp">
+        <ul className="portfolio-filter-menu primary-color text-4xl flex gap-6 justify-center">
           <li>
             <button
-              className={filterKey === "*" ? "active" : ""}
+              className={`nav-link ${filterKey === "*" ? "active" : ""}`}
               onClick={() => handleFilterKeyChange("*")}
             >
               Tous
@@ -39,7 +39,7 @@ const Portfolio = ({ filters, projects }) => {
           {Object.keys(filters).map((key, i) => (
             <li key={i}>
               <button
-                className={filterKey === key ? "active" : ""}
+                className={`nav-link ${filterKey === key ? "active" : ""}`}
                 onClick={() => handleFilterKeyChange(key)}
               >
                 {filters[key]}
@@ -51,7 +51,7 @@ const Portfolio = ({ filters, projects }) => {
         {/* Project Grid */}
         <div className="project-grid grid grid-cols-4 gap-4">
           {filteredProjects.map((project, index) => (
-            <div className="project-container" key={index}>
+            <div className="project-container primary-color" key={index}>
               <Image
                 src={project.imageOriginal}
                 alt={project.alt}
