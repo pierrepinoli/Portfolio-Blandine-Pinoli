@@ -4,8 +4,8 @@ const boat = "/images/Aquarelle/boat.jpg";
 const old_car = "/images/Aquarelle/old_car.jpg";
 
 const filters = {
-  sold: "Vendu",
   available: "Disponible",
+  sold: "Vendu",
 };
 
 const watercolorData = [

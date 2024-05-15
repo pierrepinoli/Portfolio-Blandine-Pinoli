@@ -4,8 +4,8 @@ const calimero_1 = "/images/Sculptures/calimero_1.jpg";
 const calimero_2 = "/images/Sculptures/calimero_2.jpg";
 
 const filters = {
-  sold: "Vendu",
   available: "Disponible",
+  sold: "Vendu",
 };
 
 const sculptureData = [

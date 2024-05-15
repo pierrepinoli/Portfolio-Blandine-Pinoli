@@ -36,10 +36,10 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="app-container">
+    <div className="flex h-screen">
       <Header onSelectSection={setSelectedSection} />
-      <main>
-        <div className="content-container flex flex-col items-center gap-10 ">
+      <main className="flex-1 overflow-y-auto">
+        <div className="content-container flex flex-col items-center gap-10">
           {renderSection()}
         </div>
       </main>

@@ -36,8 +36,8 @@ const vespa_5 = "/images/Huile/vespa_5.jpg";
 const vintage_car = "/images/Huile/vintage_car.jpg";
 
 const filters = {
-  sold: "Vendu",
   available: "Disponible",
+  sold: "Vendu",
 };
 
 const oilData = [

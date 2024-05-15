@@ -36,8 +36,8 @@ const tulips = "/images/Acrylique/tulips.jpg";
 const vespa = "/images/Acrylique/vespa.jpg";
 
 const filters = {
-  sold: "Vendu",
   available: "Disponible",
+  sold: "Vendu",
 };
 
 const acrylicData = [

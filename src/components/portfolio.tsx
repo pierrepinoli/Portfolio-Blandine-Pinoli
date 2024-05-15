@@ -3,7 +3,12 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
-const Portfolio = ({ filters, projects }) => {
+interface PortfolioProps {
+  filters: any[];
+  projects: any[];
+}
+
+const Portfolio: React.FC<PortfolioProps> = ({ filters, projects }) => {
   const [filterKey, setFilterKey] = useState("*");
   const [filteredProjects, setFilteredProjects] = useState(projects);
 
@@ -49,11 +54,11 @@ const Portfolio = ({ filters, projects }) => {
         </ul>
 
         {/* Project Grid */}
-        <div className="projetc-grid-container m-10 p-10">
-          <div className="project-grid grid grid-cols-3 gap-10 ">
+        <div className="projetc-grid-container mx-auto m-10 p-10">
+          <div className="project-grid grid grid-cols-4 gap-4">
             {filteredProjects.map((project, index) => (
               <div
-                className="project-container flex content-center primary-color "
+                className="project-container overflow-hidden flex justify-center items-center content-center primary-color relative"
                 key={index}
               >
                 <Image
@@ -61,7 +66,7 @@ const Portfolio = ({ filters, projects }) => {
                   alt={project.alt}
                   layout="fill"
                   objectFit="cover"
-                  className="project-img"
+                  className="transition-transform duration-300 ease-in-out transform hover:scale-110 cursor-pointer"
                 />
               </div>
             ))}

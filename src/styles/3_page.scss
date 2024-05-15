@@ -2,12 +2,6 @@
 /*  3.Page Main
 /* =================================== */
 
-.app-container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
 footer {
   position: fixed;
   bottom: 0;
@@ -22,4 +16,9 @@ footer {
   flex-grow: 1;
   overflow-y: auto; /* Ajoute un défilement uniquement aux sections */
   -webkit-overflow-scrolling: touch; /* Améliore les performances de défilement sur les appareils tactiles */
+}
+
+.home-grid-img-container {
+  width: 600px;
+  height: 400px;
 }
